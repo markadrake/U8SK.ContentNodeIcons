@@ -1,4 +1,4 @@
-> This is a release candidate. [Please report all issues at the public GitHub repository](https://github.com/markadrake/U8SK.ContentNodeIcons/issues).
+> [Please report all issues at the public GitHub repository](https://github.com/markadrake/U8SK.ContentNodeIcons/issues).
 
 # Content Node Icons
 

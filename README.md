@@ -8,7 +8,7 @@ Assign custom icons to individual content nodes through the backoffice of Umbrac
 
 | At a Glance | |
 | :-- | --
-| Current Version: | 1.0.0-rc
+| Current Version: | 1.0.0
 | Requirements: | Umbraco 8.7+
 | Nuget: | [Nuget Package](https://www.nuget.org/packages/U8SK.ContentNodeIcons/)
 | Umbraco: | [Umbraco Package](https://our.umbraco.com/packages/backoffice-extensions/content-node-icons/)
@@ -19,7 +19,7 @@ Assign custom icons to individual content nodes through the backoffice of Umbrac
 
 **If you are using the Package Manager Console**, use the following command:
 
-```PM> Install-Package U8SK.ContentNodeIcons -Version 1.0.0-beta```
+```PM> Install-Package U8SK.ContentNodeIcons -Version 1.0.0```
 
 ## Install Through the Umbraco Backoffice
 

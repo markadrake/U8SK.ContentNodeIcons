@@ -65,7 +65,7 @@ namespace U8SK.ContentNodeIcons.Trees
 		void TreeControllerBase_MenuRendering(TreeControllerBase sender, MenuRenderingEventArgs e)
 		{
 
-			if (sender.TreeAlias == Constants.Trees.Content)
+			if (sender.TreeAlias == Constants.Trees.Content && !e.NodeId.Equals("-1"))
 			{
 				// creates a menu action that will open /umbraco/currentSection/itemAlias.html
 				var i = new MenuItem("setIcon", "Set Icon");

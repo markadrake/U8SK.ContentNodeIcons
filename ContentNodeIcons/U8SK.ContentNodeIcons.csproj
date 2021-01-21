@@ -2,18 +2,17 @@
 
 	<PropertyGroup>
 		<TargetFramework>net472</TargetFramework>
-		<Version>1.0.0-rc</Version>
+		<Version>1.0.1</Version>
 		<Authors>Mark Drake</Authors>
 		<Company>Mark Drake</Company>
-		<Description>Assign custom icons to individual content nodes through the backoffice of Umbraco.
-
-Part of my Umbraco 8 Starter Kit (U8SK).</Description>
+		<Description>This allows for custom icons to be assigned to individual content nodes in the Umbraco CMS. 
+Part of the Umbraco 8 Starter Kit (U8SK).</Description>
 		<Copyright>Copyright © 2020 Mark Drake, and other contributors</Copyright>
 		<PackageProjectUrl>https://github.com/markadrake/U8SK.ContentNodeIcons</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/markadrake/U8SK.ContentNodeIcons</RepositoryUrl>
 		<RepositoryType>Git</RepositoryType>
 		<PackageTags>Umbraco</PackageTags>
-		<PackageReleaseNotes>This is the release candidate. Please report any issues to the public repository.</PackageReleaseNotes>
+		<PackageReleaseNotes>This is an beta release. Please report any issues to the public repository.</PackageReleaseNotes>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<NeutralLanguage>en</NeutralLanguage>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -36,5 +35,9 @@ Part of my Umbraco 8 Starter Kit (U8SK).</Description>
 		<PackageReference Include="UmbracoCms.Core" Version="8.7.0" />
 		<PackageReference Include="UmbracoCms.Web" Version="8.7.0" />
 	</ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+	  <Exec Command="xcopy /S /E /Y &quot;$(ProjectDir)App_Plugins&quot; &quot;$(SolutionDir)U8SK.Web\App_Plugins&quot;" />
+	</Target>
 
 </Project>
